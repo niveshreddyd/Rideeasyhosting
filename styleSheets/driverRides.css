@@ -1,0 +1,44 @@
+/* Overall styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  #ridesContainer {
+    margin-top: 20px;
+  }
+  
+  /* Individual ride elements */
+  .ride-element {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* Rounded corners for a softer look */
+    border-radius: 5px;
+  }
+  
+  .ride-element > p {
+    margin-bottom: 5px;
+  }
+  
+  /* Buttons with subtle green edges (using soft green box-shadow) */
+  .accept-button,
+  .deny-button {
+    background-color: #4CAF50; /* Light green */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2); /* Soft green glow */
+    cursor: pointer;
+  }
+  
+  .deny-button {
+    background-color: #DC3545; /* Light red */
+  }
+  
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  

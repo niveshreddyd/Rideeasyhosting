@@ -1,0 +1,51 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Ride Details Section Styling */
+  /* Ride Details Section Styling */
+  #rideContainer {
+    border: 1px solid #120fb8;
+    border-radius: 5px;
+    fill: aquamarine;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #rideContainer p {
+    margin-bottom: 5px;
+  }
+  
+  /* Final Price Section Styling */
+  #finalPrice {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  #finalPrice p {
+    margin-bottom: 5px;
+    color: rgb(14, 207, 50);
+    padding: 10px 20px;
+  }
+  
+  .deny-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Add hover effect for buttons */
+  .deny-button:hover {
+    background-color: #c0392b;
+  }
+  

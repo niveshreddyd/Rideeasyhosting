@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fride-it.tv%2F&psig=AOvVaw1qOFlSm0IxXbjqA28z5eop&ust=1714378477792000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiw9ti75IUDFQAAAAAdAAAAABAK'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    background-color: #007bff; /* Change header background color */
+    color: #fff; /* Change header text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #333; /* Change navbar link color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar .active {
+    background-color: #ddd; /* Change hover and active background color */
+    color: #333; /* Change hover and active text color */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333; /* Change dropdown button color */
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a.admin {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #333; /* Change dropdown content text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Change dropdown content hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.content p, .content ul {
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    color: #333;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.content ul li:before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #040404; /* Change bullet color */
+}
+
+.content ul li:nth-child(odd) {
+    color: #000000; /* Change text color for odd list items */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styleSheets/paymentPage.css">
+  <title>Records Page</title>
+  <style>
+    /* Add some basic styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"></script>
+</head>
+<script src="./paymentPage.js"></script>
+<body>
+
+  <h2>Payment Toggle</h2>
+
+  <label for="paymentDropDown">Select Status:</label>
+  <select id="paymentDropDown" onchange="choosePaymentMode()">
+    <option value="">CHOOSE OPTION</option>
+    <option value="CASH">CASH</option>
+    <option value="CARD">CARD</option>
+    <option value="ONLINE">ONLINE PAYMENT</option>
+  </select>
+
+  <p id="selectedPaymentMode">Selected Payment Mode:</p>
+
+  <div id="payButton"></div>
+
+  <div id="bookRidepage"></div>
+
+  <h2>Rating</h2>
+  <select id="selectRating">
+    <option value=5>CHOOSE OPTION</option>
+    <option value=5>5</option>
+    <option value=4>4</option>
+    <option value=3>3</option>
+    <option value=2>2</option>
+    <option value=1>1</option>
+  </select>
+
+  <h2>Feedback</h2>
+  <div id="feedbackContainer">
+    <textarea id="feedbackText" rows="5" placeholder="Enter your feedback here..."></textarea>
+
+    <button type="button" class="deny-button" onclick="sendFeedback()">SUBMIT FEEDBACK</button>
+  </div>
+
+</body>
+</html>

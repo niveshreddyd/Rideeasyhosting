@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-right: 10px; /* Add spacing between buttons */
+  }
+  
+  .nav-list button {
+    padding: 20px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: background-color 0.2s ease-in-out;
+    justify-content: center;
+  }
+  
+  .nav-list button:hover {
+    background-color: #ccc;
+  }
+  
+  .data-container {
+    display: flex; /* Make stat blocks side-by-side */
+    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+    margin-top: 20px; /* Add some margin from the navigation */
+  }
+  
+  .stat-block {
+    flex: 1 0 200px; /* Set minimum width for each block */
+    margin: 10px; /* Add spacing between blocks */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .stat-block p:first-child {
+    font-weight: bold;
+  }
+  

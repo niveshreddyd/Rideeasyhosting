@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK A RIDE</title>
+    <link rel="stylesheet" type="text/css" href="./styleSheets/bookRideDashboard.css">
+
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<script src="./bookRide.js"></script>
+<body class="animatedBackground" onload="pageRender()">
+
+    <h2>PASSENGER PROFILE</h2>
+    <div id="passengerProfie"></div>
+
+    <h1>BOOK YOUR RIDE</h1>
+    <h2>Enter Details for ride</h2>
+
+    <form id="bookRideForm" >
+        <label for="pickup_location">pickup_location:</label>
+        <input type="text" id="pickup_location" required><br>
+
+        <label for="drop_location">drop_location:</label>
+        <input type="text" id="drop_location" required><br>
+
+        <label>Optional Choice of preference:</label>
+        <label>
+            <input type="radio" name="optionalChoice" id="music_prefernce" value="music_prefernce"> MUSIC PREFERRED
+        </label>
+        <label>
+            <input type="radio" name="optionalChoice" id="temperature_preference" value="temperature_preference"> TEMPERATURE PREFERRED
+        </label>
+        <label>
+            <input type="radio" name="optionalChoice" id="none" value="none"> None
+        </label><br>
+
+        <button type="button" onclick="bookRide()">CONFIRM BOOKING</button>
+    </form>
+
+    <div id="rideContainer"></div>
+
+ 
+</body>
+</html>

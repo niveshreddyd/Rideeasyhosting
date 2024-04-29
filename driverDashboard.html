@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records Page</title>
+    <link rel="stylesheet" type="text/css" href="./styleSheets/driverDashboard.css">
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<script src="./driverDashboard.js"></script>
+<body onload="pageRender()"></body>
+<body>
+
+    <h2>DRIVER PROFILE</h2>
+
+    <div id="driverProfile"></div>
+
+    <!-- <div>Check Rides</div> -->
+    <button onclick="gotoRidesPage()">CHECK RIDES</button>
+
+
+    <div id="earningsContainer"></div>
+    <div id="totalRidesContainer"></div>
+    <div id="commentsRatingsContainer"></div>
+
+    <h2>Vehicles</h2>
+
+     <!-- Button to open add vehicle popup -->
+     <button onclick="toggleAddVehiclePopup()">Add Vehicle</button>
+
+     <!-- Add vehicle form popup -->
+     <div id="addVehiclePopup" style="display: none;">
+        <button id="closeBtn" onclick="toggleAddVehiclePopup()">x</button>
+         <form id="addVehicleForm">
+             <label for="type">Type:</label>
+             <input type="text" id="type" required><br>
+
+             <label for="model">Model:</label>
+             <input type="text" id="model" required><br>
+
+             <label for="capacity">Capacity:</label>
+             <input type="text" id="capacity" required><br>
+
+             <label for="vehicle_no">Vehicle No:</label>
+             <input type="text" id="vehicle_no" required><br>
+
+             <label for="music_rating">Music Rating:</label>
+             <input type="number" id="music_rating" max="5" required><br>
+
+             <label for="temperature_rating">Temperature Rating:</label>
+             <input type="number" id="temperature_rating" max="5" required><br>
+
+             <button type="button" onclick="addVehicle()">Add Vehicle</button>
+         </form>
+     </div>
+
+    <!-- <form id="addVehicleForm" >
+        <label for="type">Type</label>
+        <input type="text" id="type" required><br>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" required><br>
+
+        <label for="capacity">Capacity:</label>
+        <input type="text" id="capacity" required><br>
+
+        <label for="vehcile_no">Vehcile No:</label>
+        <input type="text" id="vehicle_no" required><br>
+
+        <label for="music_rating">Music rating:</label>
+        <input type="number" id="music_rating" max="5" required><br>
+
+        <label for="temperature_rating">Temperatur rating:</label>
+        <input type="number" id="temperature_rating" max="5" required><br>
+
+        <button type="button" onclick="addVehicle()" >Add Vehicle</button>
+    </form> -->
+
+    <!-- <button id="addVehicle" type="button" onclick="addVehiclePopUp()">ADD Vehcile</button> -->
+
+    <h2>LIST OF YOUR VEHICLES</h2>
+    <div id="vehiclesContainer">
+        <!-- Records will be dynamically added here -->
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* Shared styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex; /* Enable centered layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background-color: #222; /* Dark background color */
+    color: #ddd; /* Light text color */
+  }
+  
+  h2 {
+    margin: 15px 0;
+    color: #ddd; /* Light text color */
+  }
+  
+  /* Login form */
+  #loginForm {
+    background-color: #333; /* Darker background for form */
+    border: 1px solid #444; /* Darker border */
+    color: #ddd; /* Light text color */
+    padding: 20px; /* Inner padding */
+    border-radius: 5px;
+  }
+  
+  #loginForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd; /* Light text color */
+  }
+  
+  #loginForm input[type="text"],
+  #loginForm input[type="password"] {
+    background-color: #444; /* Slightly lighter background for input fields */
+    color: #ddd; /* Light text color */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px; /* Spacing between form elements */
+    width: 250px; /* Fixed width for form elements */
+  }
+  
+  #loginForm button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Spacing after form elements */
+  }
+  
+  #loginForm button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  

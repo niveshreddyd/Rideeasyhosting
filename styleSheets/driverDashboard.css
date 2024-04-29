@@ -1,0 +1,122 @@
+/* driverDashboard.css */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8f7; /* Light green background */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #4caf50; /* Green button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green button background on hover */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4caf50; /* Green border color on focus */
+}
+
+#addVehiclePopup {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+#addVehiclePopup label {
+    margin-bottom: 10px;
+}
+
+#addVehiclePopup button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#addVehiclePopup button:hover {
+    background-color: #45a049;
+}
+
+#vehiclesContainer {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+#closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    color: #555;
+}
+
+#closeBtn:hover {
+    color: #333;
+}
+
+/* Adjust popup position */
+#addVehiclePopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}

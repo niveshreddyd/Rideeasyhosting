@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Payment Section Styling */
+#paymentDropDown {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#selectedPaymentMode {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#payButton {
+  margin-top: 10px;
+}
+
+#bookRidepage {
+  margin-top: 20px;
+}
+
+/* Rating Section Styling */
+#selectRating {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Feedback Section Styling */
+#feedbackContainer {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#feedbackText {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include border in width calculation */
+}
+
+.deny-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional: Add hover effect for buttons */
+.deny-button:hover {
+  background-color: #299a10ba;
+}

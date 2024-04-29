@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <h2>DRIVER DAHBOARD</h2>
+
+    <form id="loginForm">
+        <label for="number">contact no:</label>
+        <input type="text" id="contact_no" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <button type="button" onclick="login()">Vehicles</button>
+    </form>
+
+    <script>
+        function vehicles() {
+            // Get input values
+            var contact_no = document.getElementById('contact_no').value;
+            var password = document.getElementById('password').value;
+
+            // Check if user exists
+            if (localStorage.getItem(contact_no) === null) {
+                alert('User not found. Please register.');
+                return;
+            }
+            
+            // Verify password
+            if (localStorage.getItem(username).password !== password) {
+                alert('Incorrect password. Please try again.');
+                return;
+            }
+
+            // Redirect to a welcome page or home page
+            alert('Login successful! Welcome, ' + username + '!');
+
+            // You can redirect to another page using window.location.href if needed.
+            window.location.href = 'driverDashboard.html';
+        }
+    </script>
+
+</body>
+</html>

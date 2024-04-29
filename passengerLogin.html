@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="./styleSheets/login.css">
+</head>
+<script>
+    function login() {
+        // Get input values
+        var contact_no = document.getElementById('contact_no').value;
+        var password = document.getElementById('password').value;
+
+        // Check if user exists
+        if (localStorage.getItem(`localPassenger`) === null) {
+            alert('User not found. Please register.');
+            return;
+        }
+        
+        // Verify password
+        if (JSON.parse(localStorage.getItem(`localPassenger`)).password !== password) {
+            alert('Incorrect password. Please try again.');
+            return;
+        }
+
+        // Redirect to a welcome page or home page
+        alert('Login successful! Welcome  !');
+
+        // You can redirect to another page using window.location.href if needed.
+        window.location.href = 'bookRideDashboard.html';
+    }
+</script>
+<body>
+
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <label for="number">contact no:</label>
+        <input type="text" id="contact_no" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+
+
+</body>
+</html>
